@@ -36,3 +36,25 @@ while(S>0){
 // 7. Modulo de S
 //        S&(N-1)
 // 
+
+
+// RightShift : Dividir entre 2
+// S>>k
+// Ejemplo: S= 0001000 -> 8
+// La manera más sencilla de ver right shift es que va desplazando todos los bits las posiciones que se indique
+// S>>2
+// Numero original = 0001000
+// Desplazamos una vez todos los bits a la derecha 0000100 -> 4
+// Desplazamos una vez todos los bits a la derecha 0000010 -> 2
+// Practicamente es agregar un cero y desplazar los bits n cantidades de veces
+
+
+// LeftShift : Multiplicar por 2
+// S<<k
+// Ejemplo: S= 0001000 -> 8
+// LeftShift es lo contrario, ya que se busca desplazar los bits a la izquierda entonces se van a mover todos los bits a la izq n veces
+// Otra forma de verlo es que se va a agregar un cero a la derecha y los demas bits se van a "desbordar"
+// S<<2
+// Numero original = 0001000
+// Desplazamos una vez todos los bits a la izquierda 0010000 -> 16
+// Desplazamos una vez todos los bits a la izquierda 0100000 -> 32
