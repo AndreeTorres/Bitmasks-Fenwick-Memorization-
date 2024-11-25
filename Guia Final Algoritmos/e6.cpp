@@ -16,7 +16,7 @@ int main(){
     int S=10;//1010
     int totalB= contarBits(S);
     for(int i=0; i<totalB;i++){
-        int x= S^=(1<<i);
+        int x= S^(1<<i);
         cout<<"XOR de la posición "<<i<<" es: "<<x<<"\n";
     }
 }

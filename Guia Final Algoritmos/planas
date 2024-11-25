@@ -1,0 +1,38 @@
+// Contar cantidad de bits activos
+while(S>0){
+    if(S&1){
+        cont++:
+    }
+    S=S>>1;
+}
+// Buscar el MSB
+// En este caso la computadora interpresta hasta el MSB y no cuenta los 0 anteriores
+// entonces la cantidad de bits será la posición del MSB
+
+while(S>0){
+    cont++:
+    S= S>>1;
+}
+// Contar bits
+while(S>0){
+    cont++;
+    S = S>>1; 
+}
+
+
+
+// 1. Verificar si un bit esta activo
+//        S & (1<<k) adonde k es la posicion a verificar
+// 2. Encender un bit
+//        S | (1<<k)
+// 3. Apagar el ultimo 1 (apagar el LSB)
+//        S & (S-1)
+// 4. LSB
+//        S&(-S)
+// 5. Hacer swap de bits
+//        S=  S^(1<<k)
+// 6. Apagar un bit 
+//        S= S& ~(1<<k)
+// 7. Modulo de S
+//        S&(N-1)
+// 

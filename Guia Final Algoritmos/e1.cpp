@@ -5,7 +5,7 @@ using namespace std;
 
 void parS(int S)
 {
-    if ((S&(2-1))==0)
+    if ((S&(2-1))==0) // N=2 porque quiero el modulo de S%2, la formula normal seria (S&(N-1)) adonde N debe de ser potencia de 2
     {
         cout << "S es par";
     }
@@ -16,8 +16,8 @@ void parS(int S)
 }
 
 int main()
-{
-    int S = 0;
+{   
+    int S = 2;
     parS(S);
 }
 

@@ -14,10 +14,12 @@ int log2(int n){
 
 int main(){
     int S=10; // 1010
+    int respuesta= S&(S-1);
+    cout << "Respuesta utilizando la funcion apagar el ultimo bit : "<< respuesta<<"\n";  
     int lsb= S&(-S);
     cout<<lsb<<"\n";
     int posicion = log2(lsb);
     S= S&~(1<<posicion);
-    cout<<"El nuevo valor con bit apagado es:"<<S;
+    cout<<"El nuevo valor con bit apagado :"<<S;
 }
 // Solución: Al encontrar el LSB obtenemos la posicion que este regresa, luego simplemente apgamos la posicion que este tiene

@@ -4,7 +4,7 @@ using namespace std;
 int contarBits(int S) {
     int contador = 0;
     while (S > 0) {
-        S >>= 1;
+        S = S>>1;
         contador++;
     }
     return contador;

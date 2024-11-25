@@ -6,7 +6,7 @@ using namespace std;
 int log2(int n)
 {
     int result = 0;
-    while (n>>=1) // La funcion inversa a exponencial es division, por lo que se desplaza a la derecha para dividir entre 2
+    while ( n>>=1) // La funcion inversa a exponencial es division, por lo que se desplaza a la derecha para dividir entre 2
     {
         result++; // Se va sumando 1 para ver cuantas divisiones realizó
     }
@@ -15,7 +15,7 @@ int log2(int n)
 
 
 int main(){
-    int S = 10; // 1010
+    int S = 10; // 1000
     int lsb = S&(-S); // R=2
     cout<<lsb<<"\n";
     int posicion= log2(lsb); // R=1 ya que 2^1=2 y se devuelve 1
